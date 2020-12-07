@@ -4,9 +4,12 @@ namespace DataStructure
 {
     public class MyStack
     {
-        private readonly int[] items = new int[5];
+        private readonly int[] items;
         private int count;
-
+        public MyStack(int size)
+        {
+            items = new int[size];
+        }
         public bool IsEmpty()
         {
             return count == 0;
