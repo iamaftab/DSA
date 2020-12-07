@@ -6,22 +6,11 @@ namespace DataStructure
     {
         static void Main()
         {
-            MyLinkedList mylist = new MyLinkedList();
-            mylist.AddFirst(90);
-            mylist.AddLast(10);
-            mylist.AddFirst(30);
-
-            mylist.Reverse();
-
-            foreach (var item in mylist.ToArray())
-            {
-                Console.WriteLine(item);
-            }
-
-            MyStack mystack = new MyStack();
-            mystack.Push(52);
-
-            Console.WriteLine(mystack.IsEmpty());
+            ArrayQueue myQ = new ArrayQueue(5);
+            myQ.Enqueue(10);
+            myQ.Enqueue(20);
+            myQ.Dequeue();
+            Console.WriteLine(myQ.ToString());
         }
     }
 }
