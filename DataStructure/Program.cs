@@ -6,11 +6,14 @@ namespace DataStructure
     {
         static void Main()
         {
-            ArrayQueue myQ = new ArrayQueue(5);
+            QueueUsingStack myQ = new QueueUsingStack(3);
             myQ.Enqueue(10);
             myQ.Enqueue(20);
+            myQ.Enqueue(30);
             myQ.Dequeue();
-            Console.WriteLine(myQ.ToString());
+
+            Console.WriteLine(myQ.Dequeue());
+
         }
     }
 }
