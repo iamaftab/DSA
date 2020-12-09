@@ -2,12 +2,12 @@
 
 namespace DataStructure
 {
-    public class ArrayQueue
+    public class QueueUsingArray
     {
-        int[] items;
+        readonly int[] items;
         int rear, front, count;
         public int Length { get; set; }
-        public ArrayQueue(int size)
+        public QueueUsingArray(int size)
         {
             items = new int[size];
             Length = size;
